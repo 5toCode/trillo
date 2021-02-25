@@ -25,12 +25,17 @@
 .sidebar {
     background-color: var(--color-grey-dark-1);
 
-    flex: 0 0 18%;
+    flex: 0 0 18%; // this flex item takes up 18% of the width (it's flex basis)
+    display: flex; // a flex container also
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view {
     background-color: #fff;
-    background-color: orangered;
 
     flex: 1;
+
+    // For testing
+    height: 80rem;
 }
